@@ -1,0 +1,54 @@
+// out: main.css
+
+color = #2c3e50
+accent = #1e9fd9
+padding = 10px
+
+@import 'nav.styl'
+
+*
+	margin 0
+	padding 0
+
+a
+	color accent
+	text-decoration none
+
+a:hover
+	color inherit
+	border-bottom 1px solid accent
+
+html
+body
+body > aside
+body > section
+	height 100%
+
+body
+	color color
+	display flex
+	font-family Source Sans Pro, Helvetica Neue, Arial, sans-serif
+
+body > aside > header
+body > section > header
+	padding padding
+
+body > aside
+	width 200px
+	text-align right
+	background #f2f2f2
+	border-right 1px solid rgba(0, 0, 0, .15)
+
+body > section
+	flex-grow 1
+
+body > section > article
+	padding padding
+
+body > section > article h2
+	color lighten(color, 50%)
+	font-size 1.2rem
+	font-weight lighter
+
+body > section > article > *
+	margin-bottom padding
