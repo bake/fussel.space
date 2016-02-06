@@ -7,7 +7,6 @@ nav li a {
   display: block;
   margin-right: -2px;
   border-right: 3px solid transparent;
-  transition: border-color 0.05s;
 }
 nav li a:hover,
 nav li a.active {
