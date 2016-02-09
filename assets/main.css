@@ -58,6 +58,11 @@ body > aside {
 body > section {
   flex-grow: 1;
 }
+@media (max-width: 399px) {
+  body > section header:first-of-type > h1 {
+    display: none;
+  }
+}
 body > section > article {
   padding: 10px;
 }

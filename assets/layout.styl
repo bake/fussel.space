@@ -53,6 +53,10 @@ body > aside
 body > section
 	flex-grow 1
 
+	@media (max-width: mobile-width - 1)
+		header:first-of-type > h1
+			display none
+
 body > section > article
 	padding padding
 
