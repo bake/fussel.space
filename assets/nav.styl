@@ -3,17 +3,31 @@
 nav li
 	margin 0
 
+	@media (max-width: mobile-width - 1)
+		display inline-block
+
+	@media (min-width: mobile-width)
+		margin padding 0
+
 nav li a
 	color inherit
 	padding padding
 	display block
-	margin-right -2px
-	border-right 3px solid transparent
+	border 3px solid transparent
+	border-top none
+	border-left none
+
+	@media (max-width: mobile-width - 1)
+		margin-bottom -2px
+		border-right none
+
+	@media (min-width: mobile-width)
+		margin-right -2px
+		border-bottom none
 
 nav li a:hover
 nav li a.active
-	border-bottom none
-	border-right-color accent
+	border-color accent
 
 nav li a:hover span
 nav li a.active span

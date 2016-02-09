@@ -1,22 +1,3 @@
-nav li {
-  margin: 0;
-}
-nav li a {
-  color: inherit;
-  padding: 10px;
-  display: block;
-  margin-right: -2px;
-  border-right: 3px solid transparent;
-}
-nav li a:hover,
-nav li a.active {
-  border-bottom: none;
-  border-right-color: #1e9fd9;
-}
-nav li a:hover span,
-nav li a.active span {
-  border-bottom: 2px solid transparent;
-}
 * {
   margin: 0;
   padding: 0;
@@ -24,31 +5,55 @@ nav li a.active span {
 a {
   color: #1e9fd9;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 a:hover {
   color: inherit;
-  border-bottom: 1px solid #1e9fd9;
+  border-color: #1e9fd9;
 }
 html,
-body,
-body > aside,
-body > section {
+body {
   height: 100%;
+}
+@media (min-width: 400px) {
+  body > aside,
+  body > section {
+    height: 100%;
+  }
 }
 body {
   color: #2c3e50;
-  display: flex;
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
+}
+@media (min-width: 400px) {
+  body {
+    display: flex;
+  }
 }
 body > aside > header,
 body > section > header {
   padding: 10px;
 }
 body > aside {
-  width: 200px;
   text-align: right;
   background: #f2f2f2;
-  border-right: 1px solid rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.15);
+  border-top: none;
+  border-left: none;
+}
+@media (max-width: 399px) {
+  body > aside {
+    border-right: none;
+  }
+}
+@media (min-width: 400px) {
+  body > aside {
+    width: 200px;
+    border-bottom: none;
+  }
+  body > aside header > h1 > span {
+    display: none;
+  }
 }
 body > section {
   flex-grow: 1;
@@ -63,4 +68,45 @@ body > section > article h2 {
 }
 body > section > article > * {
   margin-bottom: 10px;
+}
+nav li {
+  margin: 0;
+}
+@media (max-width: 399px) {
+  nav li {
+    display: inline-block;
+  }
+}
+@media (min-width: 400px) {
+  nav li {
+    margin: 10px 0;
+  }
+}
+nav li a {
+  color: inherit;
+  padding: 10px;
+  display: block;
+  border: 3px solid transparent;
+  border-top: none;
+  border-left: none;
+}
+@media (max-width: 399px) {
+  nav li a {
+    margin-bottom: -2px;
+    border-right: none;
+  }
+}
+@media (min-width: 400px) {
+  nav li a {
+    margin-right: -2px;
+    border-bottom: none;
+  }
+}
+nav li a:hover,
+nav li a.active {
+  border-color: #1e9fd9;
+}
+nav li a:hover span,
+nav li a.active span {
+  border-bottom: 2px solid transparent;
 }
