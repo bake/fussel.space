@@ -7,7 +7,7 @@ let delnodes = (nodes) => {
 }
 
 let open = (hash) => {
-	hash = (/^[a-z]+$/.test(hash)) ? hash : 'home'
+	hash = (/^[a-z\/]+$/.test(hash)) ? hash : 'home'
 	let box = document.querySelector('body > section')
 	let link = document.createElement('link')
 

@@ -1,0 +1,81 @@
+// main: main.styl
+
+*
+	margin 0
+	padding 0
+
+a
+	color accent
+	text-decoration none
+	border-bottom 1px solid transparent
+
+a:hover
+	color inherit
+	border-color accent
+
+figure
+	padding: 0 (padding / 2)
+
+	&[align=left]
+		float: left
+
+	&[align=right]
+		float: right
+
+	figcaption
+		padding: (padding / 2)
+
+html
+body
+	height 100%
+
+body
+	color color
+	font-family Source Sans Pro, Helvetica Neue, Arial, sans-serif
+
+	& > aside
+	& > section
+		@media (min-width: mobile-width)
+			height 100%
+
+	@media (min-width: mobile-width)
+		display flex
+
+	& > aside > header
+	& > section > header
+		padding padding
+
+	& > aside
+		text-align right
+		background #f2f2f2
+		border 1px solid rgba(0, 0, 0, .15)
+		border-top none
+		border-left none
+
+		@media (max-width: mobile-width - 1)
+			border-right none
+
+		@media (min-width: mobile-width)
+			width 200px
+			border-bottom none
+
+			header > h1 > span
+				display none
+
+	& > section
+		flex-grow 1
+
+		@media (max-width: mobile-width - 1)
+			header:first-of-type > h1
+				display none
+
+	& > section > article
+		padding padding
+
+	& > section > article h2
+		color lighten(color, 50%)
+		font-size 1.2rem
+		font-weight lighter
+
+	& > section > article > *
+		margin-bottom padding
