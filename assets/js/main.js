@@ -6,29 +6,43 @@ let delnodes = (nodes) => {
 	}
 }
 
-let open = (hash) => {
+let highlight = (hash) => {
+	for(let node of Array.from(document.querySelectorAll('nav a'))) {
+		node.classList.remove('active')
+	}
+
+	let nav = document.querySelector(`nav a[href$="#${hash}"]`)
+
+	if(nav) {
+		document.querySelector(`nav a[href$="#${hash}"]`).classList.add('active')
+	}
+}
+
+let render = (hash, box) => new Promise((resolve, reject) => {
 	hash = (/^[a-z\/]+$/.test(hash)) ? hash : 'home'
-	let box = document.querySelector('body > section')
 	let link = document.createElement('link')
 
 	link.rel = 'import'
 	link.href = `/pages/${hash}.html`
 
-	link.onerror = (e) => location.hash = '#error'
+	link.onerror = (e) => {
+		reject(hash)
+		location.hash = '#error'
+	}
+
 	link.onload = () => {
 		delnodes(box.querySelectorAll('article'))
 		box.appendChild(link.import.cloneNode(true).querySelector('article'))
+
+		resolve(hash)
 	}
 
-	delnodes(document.head.querySelectorAll('link[rel=import]'))
 	document.head.appendChild(link)
+})
 
-	for(let node of Array.from(document.querySelectorAll('nav a'))) {
-		node.classList.remove('active')
-	}
+let nav = document.querySelector('body > aside > nav')
+let content = document.querySelector('body > section')
 
-	document.querySelector(`nav a[href$="#${hash}"]`).classList.add('active')
-}
-
-open(location.hash.substring(1))
-onhashchange = () => open(location.hash.substring(1))
+render('navigation', nav).then(highlight)
+render(location.hash.substring(1), content).then(highlight)
+onhashchange = () => render(location.hash.substring(1), content).then(highlight)
