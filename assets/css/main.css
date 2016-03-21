@@ -12,13 +12,17 @@ a:hover {
   border-color: #1e9fd9;
 }
 figure {
-  padding: 0 5px;
+  width: 200px;
+  padding: 0 10px;
 }
 figure[align=left] {
   float: left;
 }
 figure[align=right] {
   float: right;
+}
+figure img {
+  max-width: 100%;
 }
 figure figcaption {
   padding: 5px;
