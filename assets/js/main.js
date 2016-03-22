@@ -1,11 +1,5 @@
 'use strict'
 
-let delnodes = (nodes) => {
-	for(let node of Array.from(nodes)) {
-		node.parentNode.removeChild(node)
-	}
-}
-
 let highlight = (hash) => {
 	for(let node of Array.from(document.querySelectorAll('nav a'))) {
 		node.classList.remove('active')
@@ -31,8 +25,15 @@ let render = (hash, box) => new Promise((resolve, reject) => {
 	}
 
 	link.onload = () => {
-		delnodes(box.querySelectorAll('article'))
-		box.appendChild(link.import.cloneNode(true).querySelector('article'))
+		box.innerHTML = ''
+
+		let nodes = link.import.cloneNode(true).querySelector('body')
+
+		while(nodes.hasChildNodes()) {
+			box.appendChild(nodes.removeChild(nodes.firstChild))
+		}
+
+		document.querySelector('head').removeChild(link)
 
 		resolve(hash)
 	}
@@ -41,7 +42,7 @@ let render = (hash, box) => new Promise((resolve, reject) => {
 })
 
 let nav = document.querySelector('body > aside > nav')
-let content = document.querySelector('body > section')
+let content = document.querySelector('body > section > article')
 
 render('navigation', nav).then(highlight)
 render(location.hash.substring(1), content).then(highlight)
