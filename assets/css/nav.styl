@@ -6,35 +6,41 @@ nav li
 	@media (max-width: mobile-width - 1)
 		display inline-block
 
+		&.divider
+			display block
+			padding padding
+
 	@media (min-width: mobile-width)
 		margin padding 0
 
-nav li.divider
-	color: #ccc
-	margin: 0
-	padding: 0 padding
-	font-size: .9rem
+	&.divider
+		color rgba(0, 0, 0, .25)
+		margin 0
+		padding 0 padding
+		font-size .85rem
+		font-weight bold
+		text-transform uppercase
 
-nav li a
-	color inherit
-	display block
-	padding padding
-	border 3px solid transparent
-	border-top none
-	border-left none
+	a
+		color inherit
+		display block
+		padding padding
+		border 3px solid transparent
+		border-top none
+		border-left none
 
-	@media (max-width: mobile-width - 1)
-		margin-bottom -2px
-		border-right none
+		@media (max-width: mobile-width - 1)
+			margin-bottom -2px
+			border-right none
 
-	@media (min-width: mobile-width)
-		margin-right -2px
-		border-bottom none
+		@media (min-width: mobile-width)
+			margin-right -2px
+			border-bottom none
 
-nav li a:hover
-nav li a.active
-	border-color accent
+	a:hover
+	a.active
+		border-color accent
 
-nav li a:hover span
-nav li a.active span
-	border-bottom 2px solid transparent
+	a:hover span
+	a.active span
+		border-bottom 2px solid transparent
