@@ -61,14 +61,17 @@ body
 			border-right none
 
 		@media (min-width: mobile-width)
-			width 150px
+			width nav-width
 			border-bottom none
 
 			header > h1 > span
 				display none
 
 	& > section
-		flex-grow 1
+		width width - nav-width
+
+		@media (max-width: width + 1)
+			width auto
 
 		@media (max-width: mobile-width - 1)
 			header:first-of-type > h1

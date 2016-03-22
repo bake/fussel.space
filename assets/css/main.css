@@ -73,7 +73,12 @@ body > aside {
   }
 }
 body > section {
-  flex-grow: 1;
+  width: 850px;
+}
+@media (max-width: 1001px) {
+  body > section {
+    width: auto;
+  }
 }
 @media (max-width: 399px) {
   body > section header:first-of-type > h1 {
