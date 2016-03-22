@@ -68,17 +68,19 @@ body
 				display none
 
 	& > section
+		flex-grow 1
+
 		@media (max-width: mobile-width - 1)
 			header:first-of-type > h1
 				display none
 
-	& > section > article
-		padding padding
+		& > article
+			padding padding
 
-	& > section > article h2
-		color lighten(color, 50%)
-		font-size 1.2rem
-		font-weight lighter
+		& > article h2
+			color lighten(color, 50%)
+			font-size 1.2rem
+			font-weight lighter
 
-	& > section > article > *
-		margin-bottom padding
+		& > article > *
+			margin-bottom padding

@@ -72,6 +72,9 @@ body > aside {
     display: none;
   }
 }
+body > section {
+  flex-grow: 1;
+}
 @media (max-width: 399px) {
   body > section header:first-of-type > h1 {
     display: none;
