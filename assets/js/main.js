@@ -19,14 +19,14 @@ let render = (hash, box) => new Promise((resolve, reject) => {
 	link.rel = 'import'
 	link.href = `/pages/${hash}.html`
 
+	box.innerHTML = ''
+
 	link.onerror = (e) => {
 		reject(hash)
 		location.hash = '#error'
 	}
 
 	link.onload = () => {
-		box.innerHTML = ''
-
 		let nodes = link.import.cloneNode(true).querySelector('body')
 
 		while(nodes.hasChildNodes()) {
