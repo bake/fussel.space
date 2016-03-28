@@ -2,7 +2,7 @@
 
 let meta = (hash) => {
 	let data = [
-		{ caffeine: 25, id: [1], hash: '1337', name: '1337Mate' },
+		{ caffeine: 25, id: [25, 40], hash: 'leet', name: '1337Mate' },
 		{ caffeine: 20, id: [1], hash: 'club', name: 'Club Mate' },
 		{ caffeine: 18, id: [24], hash: 'flora', name: 'Flora Power' },
 		{ caffeine: 20, id: [31], hash: 'kolle', name: 'kolle-mate' },
