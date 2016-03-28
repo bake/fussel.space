@@ -41,9 +41,27 @@ let render = (hash, box) => new Promise((resolve, reject) => {
 	document.head.appendChild(link)
 })
 
+let onload = (hash) => {
+	highlight(hash)
+
+	let mate
+
+	if((hash = hash.split('/')).length < 2) return
+	if(hash[0] != 'mate') return
+	if(!(mate = meta(hash[1]))) return
+
+	if(mate.caffeine) {
+		content.innerHTML += `<p><strong>Koffein:</strong> ${mate.caffeine}mg/100ml</p>`
+	}
+
+	if(mate.id.length) {
+		content.innerHTML += `<p>${mate.name} auf <a href="https://matemonkey.com/map/dealer/?products=${mate.id.join(',')}">MateMonkey</a></p>`
+	}
+}
+
 let nav = document.querySelector('body > aside > nav')
 let content = document.querySelector('body > section > article')
 
 render('navigation', nav).then(highlight)
-render(location.hash.substring(1), content).then(highlight)
-onhashchange = () => render(location.hash.substring(1), content).then(highlight)
+render(location.hash.substring(1), content).then(onload)
+onhashchange = () => render(location.hash.substring(1), content).then(onload)
