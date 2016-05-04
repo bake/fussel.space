@@ -3,17 +3,17 @@
   padding: 0;
 }
 a {
+  border-bottom: 1px solid transparent;
   color: #1e9fd9;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
 }
 a:hover {
-  color: inherit;
   border-color: #1e9fd9;
+  color: inherit;
 }
 figure {
-  width: 200px;
   padding: 0 10px;
+  width: 200px;
 }
 figure[align=left] {
   float: left;
@@ -51,12 +51,12 @@ body > section > header {
   padding: 10px;
 }
 body > aside {
-  flex-shrink: 0;
-  text-align: right;
   background: #f2f2f2;
   border: 1px solid rgba(0,0,0,0.15);
-  border-top: none;
   border-left: none;
+  border-top: none;
+  flex-shrink: 0;
+  text-align: right;
 }
 @media (max-width: 399px) {
   body > aside {
@@ -65,8 +65,8 @@ body > aside {
 }
 @media (min-width: 400px) {
   body > aside {
-    width: 150px;
     border-bottom: none;
+    width: 150px;
   }
   body > aside header > h1 > span {
     display: none;
@@ -75,7 +75,7 @@ body > aside {
 body > section {
   width: 850px;
 }
-@media (max-width: 1001px) {
+@media (mzax-width: 1001px) {
   body > section {
     width: auto;
   }
@@ -84,6 +84,13 @@ body > section {
   body > section header:first-of-type > h1 {
     display: none;
   }
+}
+body > section header > h1::after {
+  background: url("../img/beat.png") no-repeat center center;
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 32px;
 }
 body > section > article {
   padding: 10px;
@@ -115,30 +122,30 @@ nav li {
 }
 nav li.divider {
   color: rgba(0,0,0,0.25);
-  margin: 0;
-  padding: 0 10px;
   font-size: 0.85rem;
   font-weight: bold;
+  margin: 0;
+  padding: 0 10px;
   text-transform: uppercase;
 }
 nav li a {
+  border: 3px solid transparent;
+  border-left: none;
+  border-top: none;
   color: inherit;
   display: block;
   padding: 10px;
-  border: 3px solid transparent;
-  border-top: none;
-  border-left: none;
 }
 @media (max-width: 399px) {
   nav li a {
-    margin-bottom: -2px;
     border-right: none;
+    margin-bottom: -2px;
   }
 }
 @media (min-width: 400px) {
   nav li a {
-    margin-right: -2px;
     border-bottom: none;
+    margin-right: -2px;
   }
 }
 nav li a:hover,

@@ -1,46 +1,46 @@
 // main: main.styl
 
 nav li
-	margin 0
+	margin: 0
 
-	@media (max-width: mobile-width - 1)
-		display inline-block
+	@media (max-width: $mobile-width - 1)
+		display: inline-block
 
 		&.divider
-			display block
-			padding padding
+			display: block
+			padding: $padding
 
-	@media (min-width: mobile-width)
-		margin padding 0
+	@media (min-width: $mobile-width)
+		margin: $padding 0
 
 	&.divider
-		color rgba(0, 0, 0, .25)
-		margin 0
-		padding 0 padding
-		font-size .85rem
-		font-weight bold
-		text-transform uppercase
+		color: rgba(0, 0, 0, .25)
+		font-size: .85rem
+		font-weight: bold
+		margin: 0
+		padding: 0 $padding
+		text-transform: uppercase
 
 	a
-		color inherit
-		display block
-		padding padding
-		border 3px solid transparent
-		border-top none
-		border-left none
+		border: 3px solid transparent
+		border-left: none
+		border-top: none
+		color: inherit
+		display: block
+		padding: $padding
 
-		@media (max-width: mobile-width - 1)
-			margin-bottom -2px
-			border-right none
+		@media (max-width: $mobile-width - 1)
+			border-right: none
+			margin-bottom: -2px
 
-		@media (min-width: mobile-width)
-			margin-right -2px
-			border-bottom none
+		@media (min-width: $mobile-width)
+			border-bottom: none
+			margin-right: -2px
 
 	a:hover
 	a.active
-		border-color accent
+		border-color: $accent
 
 	a:hover span
 	a.active span
-		border-bottom 2px solid transparent
+		border-bottom: 2px solid transparent
