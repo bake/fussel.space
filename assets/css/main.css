@@ -73,7 +73,7 @@ body > aside {
   }
 }
 body > section {
-  width: 850px;
+  max-width: 850px;
 }
 @media (mzax-width: 1001px) {
   body > section {
@@ -156,3 +156,4 @@ nav li a:hover span,
 nav li a.active span {
   border-bottom: 2px solid transparent;
 }
+
