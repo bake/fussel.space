@@ -4,12 +4,16 @@
 }
 a {
   border-bottom: 1px solid transparent;
-  color: #1e9fd9;
+  color: #0070e8;
   text-decoration: none;
 }
 a:hover {
-  border-color: #1e9fd9;
+  border-color: #0070e8;
   color: inherit;
+}
+::selection {
+  background: #0070e8;
+  color: #fff;
 }
 figure {
   padding: 0 10px;
@@ -73,6 +77,7 @@ body > aside {
   }
 }
 body > section {
+  flex-grow: 1;
   max-width: 850px;
 }
 @media (mzax-width: 1001px) {
@@ -150,10 +155,9 @@ nav li a {
 }
 nav li a:hover,
 nav li a.active {
-  border-color: #1e9fd9;
+  border-color: #0070e8;
 }
 nav li a:hover span,
 nav li a.active span {
   border-bottom: 2px solid transparent;
 }
-

@@ -15,6 +15,10 @@ a:hover
 	border-color: $accent
 	color: inherit
 
+::selection
+	background: $accent
+	color: #fff
+
 figure
 	padding: 0 $padding
 	width: 200px
@@ -70,6 +74,7 @@ body
 				display: none
 
 	& > section
+		flex-grow: 1
 		max-width: $width - $nav-width
 
 		@media (mzax-width: $width + 1)
