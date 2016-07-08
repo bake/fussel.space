@@ -31,6 +31,9 @@ figure img {
 figure figcaption {
   padding: 5px;
 }
+abbr {
+  border-bottom: 1px dotted #2c3e50;
+}
 html,
 body {
   min-height: 100%;
