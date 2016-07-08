@@ -29,6 +29,11 @@ nav li
 		display: block
 		padding: $padding
 
+		&.new:before
+			color: $accent
+			content: '●'
+			padding-right: 5px;
+
 		@media (max-width: $mobile-width - 1)
 			border-right: none
 			margin-bottom: -2px

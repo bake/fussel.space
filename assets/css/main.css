@@ -141,6 +141,11 @@ nav li a {
   display: block;
   padding: 10px;
 }
+nav li a.new:before {
+  color: #0070e8;
+  content: '●';
+  padding-right: 5px;
+}
 @media (max-width: 399px) {
   nav li a {
     border-right: none;
@@ -161,3 +166,4 @@ nav li a:hover span,
 nav li a.active span {
   border-bottom: 2px solid transparent;
 }
+
