@@ -6,7 +6,7 @@ let meta = (hash) => {
 		{ caffeine: 20, id: [15], hash: 'charitea', name: 'ChariTea Mate' },
 		{ caffeine: 20, id: [1], hash: 'club', name: 'Club Mate' },
 		{ caffeine: 18, id: [24], hash: 'flora', name: 'Flora Power' },
-		{ caffeine: 25, id: [], hash: 'kano', name: 'kano' },
+		{ caffeine: 0, id: [], hash: 'kano', name: 'kano' },
 		{ caffeine: 20, id: [31], hash: 'kolle', name: 'kolle-mate' },
 		{ caffeine: 22, id: [32], hash: 'maetchen', name: 'berliner mätchen' },
 		{ caffeine: 6.2, id: [17], hash: 'makava', name: 'MAKAvA' },
