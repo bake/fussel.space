@@ -14,7 +14,9 @@
 		<h1>fussel<span>.space</span></h1>
 	</header>
 
-	<nav></nav>
+	<nav>
+		$(cat "navigation.html")
+	</nav>
 </aside>
 
 <section>
@@ -22,7 +24,9 @@
 		<h1>space</h1>
 	</header>
 
-	<article></article>
+	<article>
+		$(cat "$page")
+	</article>
 </section>
 
 <script src="/assets/js/meta.js"></script>
