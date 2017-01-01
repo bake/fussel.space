@@ -9,6 +9,7 @@ let meta = (hash) => {
 		{ caffeine: 0, id: [], hash: 'kano', name: 'kano' },
 		{ caffeine: 20, id: [31], hash: 'kolle', name: 'kolle-mate' },
 		{ caffeine: 22, id: [32], hash: 'maetchen', name: 'berliner mätchen' },
+		{ caffeine: 32, id: [], hash: 'lux', name: 'Lux Mate' },
 		{ caffeine: 6.2, id: [17], hash: 'makava', name: 'MAKAvA' },
 		{ caffeine: 6.5, id: [33, 34, 35, 36], hash: 'maki', name: 'Maki Mate' },
 		{ caffeine: 0, id: [], hash: 'mari', name: 'Mari' },
