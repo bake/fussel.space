@@ -3,9 +3,7 @@
 tpl=`cat -`
 out="$(pwd)/out"
 rm -rf "${out}"
-if [ ! -d "${out}" ]; then
-	mkdir -p "${out}"
-fi
+mkdir -p "${out}"
 cp -r "./assets" "${out}/assets"
 cd "./pages/"
 for page in $(find . -name "*.html"); do
