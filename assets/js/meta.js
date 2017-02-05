@@ -13,6 +13,7 @@ let meta = (hash) => {
 		{ caffeine: 6.2, id: [17], hash: 'makava', name: 'MAKAvA' },
 		{ caffeine: 6.5, id: [33, 34, 35, 36], hash: 'maki', name: 'Maki Mate' },
 		{ caffeine: 0, id: [], hash: 'mari', name: 'Mari' },
+		{ caffeine: 24, id: [], hash: 'hoch-2', name: 'Mate-Hoch-2' },
 		{ caffeine: 30, id: [37], hash: 'matemate', name: 'MATE MATE' },
 		{ caffeine: 21.5, id: [14], hash: 'maya', name: 'Maya Mate' },
 		{ caffeine: '∞', id: [], hash: 'metamate', name: 'Meta Mate' },
