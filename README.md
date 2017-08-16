@@ -1,7 +1,8 @@
-# fussel.space
+# [fussel.space](https://fussel.space/)
 
 A small website. About mate. And foo.
 
 ```bash
-$ ./make.sh < template.html
+$ make
+$ make install
 ```
