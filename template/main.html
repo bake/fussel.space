@@ -2,7 +2,7 @@
 <meta charset=\"utf-8\">
 <meta name=\"viewport\" content=\"width=device-width\">
 
-<title>fussel.space</title>
+<title>$(meta "$page" "title") - fussel.space</title>
 
 <link rel=\"stylesheet\" href=\"/assets/css/main.css\">
 <link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic\">
@@ -25,9 +25,20 @@
 	</header>
 
 	<article>
-		$(cat "$page")
+		<h2>$(meta "$page" "title")</h2>
+
+		$(content "$page")
+
+		$(if [ `dirname "$page"` == "./mate" ]; then
+			caffeine=`meta "$page" "caffeine"`
+			if [ "$caffeine" != "" ]; then
+				echo "<p><strong>Koffein:</strong> ${caffeine}mg/100ml</p>"
+			fi
+
+			monkey=`meta "$page" "monkey"`
+			if [ "$monkey" != "" ]; then
+				echo "<p><a href=\"https://matemonkey.com/map/dealer/?products=${monkey}\">$(meta "${page}" "title") auf <strong>MateMonkey</strong></a></p>"
+			fi
+		fi)
 	</article>
 </section>
-
-<script src=\"/assets/js/meta.js\"></script>
-<script src=\"/assets/js/main.js\"></script>

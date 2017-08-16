@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-function slug {
-	basename "${1}" ".html"
+function meta {
+	cat "${1}" | grep "${2}:" | sed -e "s/^$2: //"
 }
 
-function name {
-	cat "${1}" | head -n 1 | sed -e 's/<[^>]*>//g'
+function content {
+	body=`cat ${1}`
+	echo ${body#*---}
 }
 
 tpl=`cat -`
@@ -18,8 +19,9 @@ cp -r "./assets" "${out}/assets"
 cd "./pages"
 pages=$(find . -name "*.html" | sort)
 for page in $pages; do
+	echo "$page"
 	path="${out}/$(dirname ${page})"
-	slug=`basename "${page}" ".html"`
+	file=`basename "${page}"`
 	mkdir -p "${path}"
-	eval "echo \"${tpl}\"" > "${path}/${slug}.html"
+	eval "echo \"${tpl}\"" > "${path}/${file}"
 done

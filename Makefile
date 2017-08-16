@@ -1,4 +1,9 @@
-default:
+default: clean build
+
+clean:
+	@rm -rf out/*
+
+build:
 	@./make.sh < template/main.html
 
 install: default
