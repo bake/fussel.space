@@ -1,0 +1,14 @@
+<ul>
+	<li><a href=\"/\"><span>Start</span></a></li>
+	<li><a href=\"https://git.192k.pw/bake/fussel.space\">Git</a></li>
+	<li class=\"divider\"><span>Mate</span></li>
+	$(for page in $pages; do
+		class=""
+		if [ `slug "$page"` == "$slug" ]; then
+			class=" class=\"active\""
+		fi
+		if [ `dirname "$page"` == "./mate" ]; then
+			echo "<li><a href=\"/mate/$(slug "$page").html\"${class}><span>$(name "$page")</span></a></li>";
+		fi
+	done)
+</ul>

@@ -15,7 +15,7 @@
 	</header>
 
 	<nav>
-$(cat "navigation.html")
+		$(eval "echo \"$(cat "../template/navigation.html")\"")
 	</nav>
 </aside>
 
@@ -25,7 +25,7 @@ $(cat "navigation.html")
 	</header>
 
 	<article>
-$(cat "$page")
+		$(cat "$page")
 	</article>
 </section>
 
