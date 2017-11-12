@@ -14,8 +14,6 @@ out="$(pwd)/out"
 if [ ! -d "${out}" ]; then
 	mkdir -p "${out}"
 fi
-rm -rf "${out}/*"
-cp -r "./assets" "${out}/assets"
 cd "./pages"
 pages=$(find . -name "*.html" | sort)
 for page in $pages; do
