@@ -40,5 +40,9 @@
 				echo "<p><a href=\"https://matemonkey.com/map/dealer/?products=${monkey}\">$(meta "${page}" "title") auf <strong>MateMonkey</strong></a></p>"
 			fi
 		fi)
+
+		<footer>
+			<p>$(git log -1 --format="Zuletzt bearbeitet am <a href="https://git.192k.pw/bake/fussel.space/commit/%H">%ad</a> von <a href="https://git.192k.pw/%an">%an</a>." --date=format:"%d.%m.%Y" $page)</p>
+		</footer>
 	</article>
 </section>

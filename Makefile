@@ -7,12 +7,15 @@ html:
 	@./compile.sh < template/main.html
 
 css:
-	@stylus assets/css/main.styl
+	@npx stylus assets/css/main.styl
 
 assets: css
 	@mkdir -p out/assets/{css,img}
 	@cp -r assets/css/*.css out/assets/css/
-	@cp -r assets/img/ out/assets/img/
+	@cp -r assets/img/* out/assets/img/
+
+dependencies:
+	@npm i stylus
 
 build: assets html
 
