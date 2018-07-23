@@ -1,0 +1,15 @@
+.grid
+	display: flex
+	flex-wrap: wrap
+
+	& > .col-one-fourth
+		width: calc(100% / 4)
+
+		@media (max-width: $mobile-width)
+			width: calc(100% / 2)
+
+	& > .col-one-third
+		width: calc(100% / 3)
+
+		@media (max-width: $mobile-width)
+			width: calc(100% / 1)
