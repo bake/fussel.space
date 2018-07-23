@@ -1,8 +1,21 @@
 title: Ein Hackerspace für blaue, Eisteemate trinkende Frotteehasen
 ---
 
-<figure align="left">
-	<img src="/assets/img/dag.png">
-</figure>
-
 <p>Alles hier ist meine persönliche Meinung. Oder gelogen. Im Zweifelsfall gelogen.</p>
+
+<hr>
+
+<div class="grid">
+	$(for page in mate/*.html; do echo "
+		<div class="col-one-fourth">
+			<figure>
+				<img src=\"/assets/img/$(basename "${page}" ".html")_1.jpg\">
+				<figcaption>
+					<a href=\"/mate/$(basename "${page}")\">
+						$(meta "${page}" "title")
+					</a>
+				</figcaption>
+			</figure>
+		</div>
+	"; done)
+</div>
