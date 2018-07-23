@@ -6,7 +6,7 @@ function meta {
 
 function content {
 	body=`cat ${1}`
-	echo ${body#*---}
+	eval "echo \"${body#*---}\""
 }
 
 tpl=`cat -`
