@@ -5,11 +5,11 @@ title: Ein Hackerspace für blaue, Eisteemate trinkende Frotteehasen
 
 <hr>
 
-<div class="grid">
+<div class=\"grid\">
 	$(for page in mate/*.html; do echo "
 		<div class=\"col-one-fourth\">
 			<figure>
-				<img src=\"/assets/img/$(basename "${page}" ".html")_1.jpg\">
+				<img src=\"/assets/img/$(basename "${page}" ".html")_1.jpg\" alt=\"$(meta "${page}" "title")\">
 				<figcaption>
 					<a href=\"/mate/$(basename "${page}")\">
 						$(meta "${page}" "title")

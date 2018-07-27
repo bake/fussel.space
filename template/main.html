@@ -1,48 +1,60 @@
 <!doctype html>
-<meta charset=\"utf-8\">
-<meta name=\"viewport\" content=\"width=device-width\">
+<html lang=\"de\">
+	<head>
+		<meta charset=\"utf-8\">
+		<meta name=\"viewport\" content=\"width=device-width\">
 
-<title>$(meta "$page" "title") - fussel.space</title>
+		<title>$(meta "$page" "title") - fussel.space</title>
 
-<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
-<link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic\">
+		<link rel=\"stylesheet\" href=\"/assets/css/main.css\">
+		<link rel=\"stylesheet\" href=\"//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic\">
 
-<link rel=\"icon\" href=\"/assets/img/beat.png\">
+		<link rel=\"icon\" href=\"/assets/img/beat.png\">
+	</head>
 
-<aside>
-	<header>
-		<h1>fussel<span>.space</span></h1>
-	</header>
+	<body>
+		<aside>
+			<header>
+				<h1>fussel<span>.space</span></h1>
+			</header>
 
-	<nav>
-		$(eval "echo \"$(cat "../template/navigation.html")\"")
-	</nav>
-</aside>
+			<nav>
+				$(eval "echo \"$(cat "../template/navigation.html")\"")
+			</nav>
+		</aside>
 
-<section>
-	<header>
-		<h1>space</h1>
-	</header>
+		<section>
+			<header>
+				<h1>space</h1>
+			</header>
 
-	<article>
-		<h2>$(meta "$page" "title")</h2>
+			<article>
+				<h2>$(meta "$page" "title")</h2>
 
-		$(content "$page")
+				$(content "$page")
 
-		$(if [ `dirname "$page"` == "./mate" ]; then
-			caffeine=`meta "$page" "caffeine"`
-			if [ "$caffeine" != "" ]; then
-				echo "<p><strong>Koffein:</strong> ${caffeine}mg/100ml</p>"
-			fi
+				$(if [ `dirname "$page"` == "./mate" ]; then
+					caffeine=`meta "$page" "caffeine"`
+					if [ "$caffeine" != "" ]; then echo "
+						<p>
+							<strong>Koffein:</strong> ${caffeine}mg/100ml
+						</p>
+					"; fi
 
-			monkey=`meta "$page" "monkey"`
-			if [ "$monkey" != "" ]; then
-				echo "<p><a href=\"https://matemonkey.com/map/dealer/?products=${monkey}\">$(meta "${page}" "title") auf <strong>MateMonkey</strong></a></p>"
-			fi
-		fi)
+					monkey=`meta "$page" "monkey"`
+					if [ "$monkey" != "" ]; then echo "
+						<p>
+							<a href=\"https://matemonkey.com/map/dealer/?products=${monkey}\">
+								$(meta "${page}" "title") auf <strong>MateMonkey</strong>
+							</a>
+						</p>
+					"; fi
+				fi)
 
-		<footer>
-			<p>$(git log -1 --format="Zuletzt bearbeitet am <a href="https://git.192k.pw/bake/fussel.space/commit/%H">%ad</a> von <a href="https://git.192k.pw/%an">%an</a>." --date=format:"%d.%m.%Y" $page)</p>
-		</footer>
-	</article>
-</section>
+				<footer>
+					<p>$(git log -1 --format="Zuletzt bearbeitet am <a href=\"https://git.192k.pw/bake/fussel.space/commit/%H\">%ad</a> von <a href=\"https://git.192k.pw/%an\">%an</a>." --date=format:"%d.%m.%Y" $page)</p>
+				</footer>
+			</article>
+		</section>
+	</body>
+</html>

@@ -3,13 +3,15 @@
 	<li><a href=\"https://git.192k.pw/bake/fussel.space\">Git</a></li>
 	<li class=\"divider\"><span>Mate</span></li>
 	$(for page in $pages; do
-		if [ `dirname "${page}"` != "./mate" ]; then
-			continue
-		fi
 		class=""
-		if [ `basename "${page}"` == "$file" ]; then
-			class=" class=\"active\""
-		fi
-		echo "<li><a href=\"/mate/$(basename "${page}")\"${class}><span>$(meta "${page}" "title")</span></a></li>";
+		if [ `dirname "${page}"` != "./mate" ]; then continue; fi
+		if [ `basename "${page}"` == "$file" ]; then class=" class=\"active\""; fi
+		echo "
+			<li>
+				<a href=\"/mate/$(basename "${page}")\"${class}>
+					<span>$(meta "${page}" "title")</span>
+				</a>
+			</li>
+		";
 	done)
 </ul>
