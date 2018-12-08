@@ -2,6 +2,7 @@
 title = "Soulmate"
 images = ["soulmate_1.jpg"]
 captions = ["Soulmate"]
+aliases = ["/mate/soulmate.html"]
 +++
 
 <em>Erst wenn jedes gute Wortspiel und jede fancy Domain vergeben ist, werdet ihr merken, dass nicht genügend Früchte existieren um Hipstermate aus Berlin zu süßen.</em>

@@ -2,6 +2,7 @@
 title = "Mate Bier"
 images = ["bier_1.jpg", "bier_2.jpg"]
 captions = ["Mate Bier", "Rückseite"]
+aliases = ["/mate/bier.html"]
 +++
 
 Seit Ende 2016 existiert ein Spiritueller Nachfolger von [Meta Mate](/mate/metamate.html) Mate-Bier-Getränk *Mier*, das mangels Nachweisen von *Kram*, *Dingen* und *Zeug* nicht mehr verkauft werden durfte. [Mate Bier](http://mate-bier.de/) ist ein Pils und setzt - wie Mier - auf Mate aus der Meta Mate.

@@ -3,6 +3,7 @@ title = "Ultichá Mate"
 caffeine = "21"
 images = ["ulti_1.jpg"]
 captions = ["Ultichá Melone"]
+aliases = ["/mate/ulti.html"]
 +++
 
 Mate. Mit Melone. Verrückt.

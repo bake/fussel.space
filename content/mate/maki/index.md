@@ -4,6 +4,7 @@ caffeine = "6,5"
 monkey = "33,34,35,36"
 images = ["maki_1.jpg", "maki_2.jpg"]
 captions = ["Maki Mate", "Maki Orange"]
+aliases = ["/mate/maki.html"]
 +++
 
 [Maki](http://maki-mate.de/) ist seit nun schon ein paar Jahren meine liebste Mate, was wohl hauptsächlich daran liegt, dass sie nicht so künstlich schmeckt wie die anderer Marken. Das kommt *vermutlich* von den Zutaten, die recht simpel ausfallen, denn die Mate besteht aus 55% Aufelsaft und 45% Mateaufguss. Das alleine reicht aber nicht, wie [Voelkels Version](/mate/voelkel.html) zeigt. [Mätchen](/mate/maetchen.html) und [No.1](/mate/no1.html) machen es besser.</a>

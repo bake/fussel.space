@@ -4,6 +4,7 @@ caffeine = "22"
 monkey = "18,19,20,21,22,23"
 images = ["top_1.jpg", "top_2.jpg"]
 captions = ["Top Mate", "Top Mate Cola"]
+aliases = ["/mate/top.html"]
 +++
 
 Vermutlich wird bei der Standard-[Top Mate](http://top-mate.de/) ein Aufguss auf mehrere Kisten verteilt. Ob sich

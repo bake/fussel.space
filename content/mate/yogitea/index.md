@@ -2,6 +2,7 @@
 title = "Yogi Tea"
 images = ["yogitea_1.jpg"]
 captions = ["Yogi Tea Mate Zitrone"]
+aliases = ["/mate/yogitea.html"]
 +++
 
 Auch wenn auf dem Etikett "Mate Zitrone mit grünem Tee" steht, übernimmt Mate in [YOGI TEAs Mateeistee](https://www.yogitea.com/de/coldtea/mate-zitrone/)	wieder nicht den überwiegende Geschmack. Sie ist dank dem Agavendicksaft und der Zitrone zum süßen sowie dem fehlenden Sprudel

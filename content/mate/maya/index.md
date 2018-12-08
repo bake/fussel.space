@@ -4,6 +4,7 @@ caffeine = "21,5"
 monkey = "14"
 images = ["maya_1.jpg"]
 captions = ["Maya Mate"]
+aliases = ["/mate/maya.html"]
 +++
 
 Eigentlich wollte ich damit beginnen, über fussel.space zu meckern, weil es mich zwingt, dinge wie [Maya Mate](http://mayamate.de/) zu trinken.

@@ -4,6 +4,7 @@ caffeine = "6,2"
 monkey = "17"
 images = ["makava_1.jpg"]
 captions = ["0,33l MAKAvA"]
+aliases = ["/mate/makava.html"]
 +++
 
 Die kleinen Flaschen [MAKAvA](http://makava.at/) sind recht frei von Kohlensäure und schmecken erfrischender als
