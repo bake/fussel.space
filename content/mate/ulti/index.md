@@ -1,11 +1,9 @@
----
-title: Ultichá Mate
-caffeine: 21
-images:
-  - ulti_1.jpg
-captions:
-  - Ultichá Melone
----
++++
+title = "Ultichá Mate"
+caffeine = "21"
+images = ["ulti_1.jpg"]
+captions = ["Ultichá Melone"]
++++
 
 Mate. Mit Melone. Verrückt.
 

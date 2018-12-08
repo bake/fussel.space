@@ -1,12 +1,10 @@
----
-title: Rio Mate
-caffeine: 32
-monkey: 28
-images:
-  - rio_1.jpg
-captions:
-  - Rio Mate
----
++++
+title = "Rio Mate"
+caffeine = "32"
+monkey = "28"
+images = ["rio_1.jpg"]
+captions = ["Rio Mate"]
++++
 
 Lange habe ich mich vor einem erneuten Probieren gedrückt.
 

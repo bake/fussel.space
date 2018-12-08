@@ -1,14 +1,10 @@
----
-title: Top Mate
-caffeine: 22
-monkey: 18,19,20,21,22,23
-images:
-  - top_1.jpg
-  - top_2.jpg
-captions:
-  - Top Mate
-  - Top Mate Cola
----
++++
+title = "Top Mate"
+caffeine = "22"
+monkey = "18,19,20,21,22,23"
+images = ["top_1.jpg", "top_2.jpg"]
+captions = ["Top Mate", "Top Mate Cola"]
++++
 
 Vermutlich wird bei der Standard-[Top Mate](http://top-mate.de/) ein Aufguss auf mehrere Kisten verteilt. Ob sich
 	die *Strong-Edition* nur am Koffeingehalt (29mg/100ml) oder auch hier unterscheidet weiß ich nicht.

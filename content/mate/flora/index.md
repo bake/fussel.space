@@ -1,12 +1,8 @@
----
-title: Flora Power
-images:
-  - flora_1.jpg
-  - flora_2.jpg
-captions:
-  - Flora Power
-  - Version vom 32C3
----
++++
+title = "Flora Power"
+images = ["flora_1.jpg", "flora_2.jpg"]
+captions = ["Flora Power", "Version vom 32C3"]
++++
 
 Meine erste [Flora](http://www.flora-power.de/) seit über einem Jahr hatte ich auf dem 32C3 und entsprechend gute Gefühle verbinde ich mit ihr.
 

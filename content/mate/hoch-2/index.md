@@ -1,11 +1,9 @@
----
-title: Mate-Hoch-2
-caffeine: 24
-images:
-  - hoch-2_1.jpg
-captions:
-  - m<sup>2</sup>-Mate
----
++++
+title = "Mate-Hoch-2"
+caffeine = "24"
+images = ["hoch-2_1.jpg"]
+captions = ["m<sup>2</sup>-Mate"]
++++
 
 Yay, [mehr](/mate/lux.html) Minz-Mate. Ich mag Pfefferminz nicht außerhalb warmen Tees. Vielleicht hat das erstellen der *m<sup>2</sup>-Mate-+-Minze*-Seite deswegen fast ein halbes Jahr gedauert. Vielleicht aber auch bloß weil ich sie nicht sonderlich spektakulär in Erinnerung habe.
 

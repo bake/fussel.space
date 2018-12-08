@@ -1,14 +1,10 @@
----
-title: MioMioMate
-caffeine: 20
-monkey: 12
-images:
-  - miomio_1.jpg
-  - miomio_2.jpg
-captions:
-  - MioMioMate
-  - MioMioMate Ginger
----
++++
+title = "MioMioMate"
+caffeine = "20"
+monkey = "12"
+images = ["miomio_1.jpg", "miomio_2.jpg"]
+captions = ["MioMioMate", "MioMioMate Ginger"]
++++
 
 Meh. Gummibärenmate. Davon gibt es viele, [MioMio](http://miomiomate.de/) ist vermutlich meine liebste. Das ist nicht positiv gemeint. Sie schmeckt nach kaum mehr als Zucker. Wer weiß was drin ist.
 
