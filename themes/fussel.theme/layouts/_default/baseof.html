@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+	<head>
+		{{ partial "head.html" . }}
+		{{ template "_internal/opengraph.html" . }}
+	</head>
+	<body>
+		{{ partial "header.html" . }}
+
+		{{ block "main" . }}{{ end }}
+
+		{{ partial "footer.html" . }}
+	</body>
+</html>

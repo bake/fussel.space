@@ -1,0 +1,112 @@
+$aside-background = #f2f2f2
+
+*
+	margin: 0
+	padding: 0
+
+a
+	border-bottom: 1px solid transparent
+	color: $accent
+	text-decoration: none
+
+a:hover
+	border-color: $accent
+	color: inherit
+
+::selection
+	background: $accent
+	color: #fff
+
+figure
+	padding: 0 $padding
+	width: 100%
+	max-width: 200px
+
+	&[align=left]
+		float: left
+
+	&[align=right]
+		float: right
+
+	img
+		max-width: 100%
+
+	figcaption
+		padding: ($padding / 2)
+
+abbr
+	border-bottom: 1px dotted $color
+
+hr
+	border: none
+	padding: .5em
+
+html
+body
+	min-height: 100%
+
+body
+	color: $color
+	font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif
+
+	& > aside
+	& > section
+		@media (min-width: $mobile-width)
+			height: 100%
+
+	@media (min-width: $mobile-width)
+		display: flex
+
+	& > aside > header
+	& > section > header
+		padding: $padding
+
+	& > aside
+		background: $aside-background
+		border: 1px solid rgba(0, 0, 0, .15)
+		border-left: none
+		border-top: none
+		flex-shrink: 0
+		text-align: right
+
+		@media (max-width: $mobile-width - 1)
+			border-right: none
+
+		@media (min-width: $mobile-width)
+			border-bottom: none
+			width: $nav-width
+
+			header > h1 > span
+				display: none
+
+	& > section
+		flex-grow: 1
+		max-width: $width - $nav-width
+
+		@media (max-width: $width + 1)
+			width: auto
+
+		@media (max-width: $mobile-width - 1)
+			header:first-of-type > h1
+				display: none
+
+		header > h1::after
+			background: url(../img/beat.png) no-repeat center center
+			content: ''
+			display: inline-block
+			height: 16px
+			width: 32px
+
+		& > article
+			padding: $padding
+
+			h2
+				font-size: 1.2rem
+				font-weight: lighter
+
+			h2,
+			footer
+				color: lighten($color, 50%)
+
+			& > *
+				margin-bottom: $padding

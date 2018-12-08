@@ -1,0 +1,24 @@
+baseURL = "https://fussel.space/"
+languageCode = "de-de"
+title = "fussel.space"
+theme = "fussel.theme"
+enableGitInfo = true
+# uglyURLs = true
+
+[params]
+  description = "A small website. About mate. And foo."
+
+[permalinks]
+  mate = "/mate/:slug/"
+
+[menu]
+  [[menu.meta]]
+    identifier = "start"
+    name = "Start"
+    url = "/"
+    weight = 10
+  [[menu.meta]]
+    identifier = "git"
+    name = "Git"
+    url = "https://git.192k.pw/bake/fussel.space"
+    weight = 20

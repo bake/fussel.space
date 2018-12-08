@@ -1,0 +1,8 @@
+name = "fussel.theme"
+description = "theme for fussel.space"
+homepage = "https://fussel.space/"
+min_version = "0.41"
+
+[author]
+  name = "bake"
+  homepage = "https://192k.pw/"

@@ -1,0 +1,30 @@
+{{ define "main" }}
+	<article>
+		<h2>{{ .Title }}</h2>
+
+		<figure align="left">
+			{{ range $i, $_ := .Params.Images }}
+				<img src="{{ index $.Params.Images $i }}">
+				<figcaption>{{ index $.Params.Captions $i | markdownify }}</figcaption>
+			{{ end }}
+		</figure>
+
+		{{ .Content }}
+
+		{{ if .Params.Caffeine }}
+			<p><strong>Koffein:</strong> {{ .Params.Caffeine }}mg/100ml</p>
+		{{ end }}
+
+		{{ if .Params.Monkey }}
+			<p>
+				<a href="https://matemonkey.com/map/dealer/?products={{ .Params.Monkey }}">
+					{{ .Title }} auf <strong>MateMonkey</strong>
+				</a>
+			</p>
+		{{ end }}
+
+		<footer>
+			{{ partial "lastmod" . }}
+		</footer>
+	</article>
+{{ end }}

@@ -1,0 +1,4 @@
+{{ if .Page.GitInfo }}
+	<p>Zuletzt bearbeitet am <a href="https://git.192k.pw/bake/fussel.space/commit/{{ .Page.GitInfo.Hash }}">{{ dateFormat "02.01.2006" .Page.GitInfo.AuthorDate }}</a> von <a href="https://git.192k.pw/{{ .Page.GitInfo.AuthorName }}">{{ .Page.GitInfo.AuthorName }}</a>.
+	</p>
+{{ end }}
