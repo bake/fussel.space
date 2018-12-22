@@ -1,21 +1,28 @@
-$aside-background = #f2f2f2
-
 *
 	margin: 0
 	padding: 0
 
 a
 	border-bottom: 1px solid transparent
-	color: $accent
+	color: $fresh
 	text-decoration: none
+	background: linear-gradient(45deg, $fresh, $hope)
+	background-clip: text
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
 
 a:hover
-	border-color: $accent
 	color: inherit
+	border-image: linear-gradient(to right, $fresh, $hope)
+	border-image-slice: 1
+	-webkit-text-fill-color: inherit
 
 ::selection
-	background: $accent
+	background: $fresh
 	color: #fff
+
+img
+	max-width: 100%
 
 figure
 	padding: 0 $padding
@@ -28,14 +35,11 @@ figure
 	&[align=right]
 		float: right
 
-	img
-		max-width: 100%
-
 	figcaption
 		padding: ($padding / 2)
 
 abbr
-	border-bottom: 1px dotted $color
+	border-bottom: 1px dotted $reboot
 
 hr
 	border: none
@@ -46,7 +50,7 @@ body
 	min-height: 100%
 
 body
-	color: $color
+	color: $reboot
 	font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif
 
 	& > aside
@@ -62,12 +66,17 @@ body
 		padding: $padding
 
 	& > aside
-		background: $aside-background
-		border: 1px solid rgba(0, 0, 0, .15)
+		color: #f2f2f2
+		background: #000
+		border: 1px solid $hope
 		border-left: none
 		border-top: none
 		flex-shrink: 0
 		text-align: right
+		padding-top: 150px
+		background-size: 100% auto
+		background-image: url(../img/calebasse.svg)
+		background-repeat: no-repeat
 
 		@media (max-width: $mobile-width - 1)
 			border-right: none
@@ -106,7 +115,7 @@ body
 
 			h2,
 			footer
-				color: lighten($color, 50%)
+				color: lighten($reboot, 50%)
 
 			& > *
 				margin-bottom: $padding

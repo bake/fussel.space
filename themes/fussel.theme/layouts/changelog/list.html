@@ -1,0 +1,15 @@
+{{ define "main" }}
+	<article>
+		<h2>{{ .Title }}</h2>
+
+		<ul>
+			{{ range .Pages }}
+				<li>{{ .Date.Format "02.01.2006" }} {{ .Content }}</li>
+			{{ end }}
+		</ul>
+
+		<footer>
+			{{ partial "lastmod" . }}
+		</footer>
+	</article>
+{{ end }}

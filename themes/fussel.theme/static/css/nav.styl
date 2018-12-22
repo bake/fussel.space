@@ -12,7 +12,7 @@ nav li
 		// margin: $padding 0
 
 	&.divider
-		color: rgba(0, 0, 0, .25)
+		color: lighten($reboot, 50%)
 		font-size: .85rem
 		font-weight: bold
 		margin: $padding 0
@@ -26,12 +26,13 @@ nav li
 		border: 3px solid transparent
 		border-left: none
 		border-top: none
-		color: inherit
+		color: red
 		display: block
 		padding: $padding
+		-webkit-text-fill-color: #f2f2f2
 
 		&.new:before
-			color: $accent
+			color: $fresh
 			content: '●'
 			padding-right: 5px;
 
@@ -45,7 +46,8 @@ nav li
 
 	a:hover
 	a.active
-		border-color: $accent
+		border-color: $hope
+		-webkit-text-fill-color: transparent
 
 	a:hover span
 	a.active span
