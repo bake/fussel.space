@@ -18,8 +18,10 @@ a:hover
 	-webkit-text-fill-color: inherit
 
 ::selection
-	background: $fresh
-	color: #fff
+	background: rgba(0, 0, 0, .1)
+
+body > aside ::selection
+	background: rgba(255, 255, 255, .15)
 
 img
 	max-width: 100%
@@ -66,7 +68,7 @@ body
 		padding: $padding
 
 	& > aside
-		color: #f2f2f2
+		// color: invert($reboot)
 		background: #000
 		border: 1px solid $hope
 		border-left: none
@@ -74,9 +76,10 @@ body
 		flex-shrink: 0
 		text-align: right
 		padding-top: 150px
-		background-size: 100% auto
+		background-size: auto 150px
 		background-image: url(../img/calebasse.svg)
 		background-repeat: no-repeat
+		background-position: top right
 
 		@media (max-width: $mobile-width - 1)
 			border-right: none
