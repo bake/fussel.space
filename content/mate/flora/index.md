@@ -1,7 +1,7 @@
 +++
 title = "Flora Power"
-images = ["flora_1.jpg", "flora_2.jpg"]
-captions = ["Flora Power", "Version vom 32C3"]
+images = ["flora_1.jpg", "flora_2.jpg", "flora_3.jpg"]
+captions = ["Flora Power", "Version vom 32C3", "Version von 35C3"]
 aliases = ["/mate/flora.html"]
 +++
 
