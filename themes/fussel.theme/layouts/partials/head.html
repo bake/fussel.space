@@ -1,9 +1,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <meta name="viewport" content="width=device-width">
-{{ if .RSSLink }}
-	<link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-	<link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+{{ with .OutputFormats.Get "RSS" }}
+	<link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml">
+	<link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml">
 {{ end }}
 
 <title>{{ .Title }}</title>

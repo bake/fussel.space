@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #343a40;
+	font-family: oxygen, sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: column;
+	max-width: 60rem;
+}
+
+@media (min-width: 768px) {
+	body {
+		flex-direction: row;
+	}
+}
+
+h1,
+h2,
+h3 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 1.5rem;
+	line-height: 2;
+}
+
+h2 {
+	line-height: 1.75;
+}
+
+h3 {
+	line-height: 1.5;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Navigation */
+
+body > aside {
+	flex-shrink: 0;
+	padding-top: 15rem;
+	background-image: url(/img/logo.png);
+	background-repeat: no-repeat;
+	background-size: auto 13rem;
+	background-position: 1rem 1rem;
+}
+
+@media (min-width: 768px) {
+	body > aside {
+		width: 15rem;
+	}
+}
+
+body > aside ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body > aside li {
+	display: inline-block;
+}
+
+@media (min-width: 768px) {
+	body > aside li {
+		display: block;
+	}
+}
+
+body > aside h1,
+body > aside li,
+body > aside li a {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1px;
+}
+
+body > aside h1,
+body > aside li.divider span,
+body > aside li a {
+	padding-left: 1rem;
+	padding-right: 1rem;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	body > aside h1,
+	body > aside li.divider span,
+	body > aside li a {
+		padding-left: 3rem;
+	}
+}
+
+body > aside li a {
+	background: #f9f9f9;
+}
+
+body > aside li a:hover,
+body > aside li.active a {
+	color: white;
+	background: black;
+}
+
+body > aside li.divider {
+	display: block;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+/* Main */
+
+body > section {
+	padding: 1rem;
+}
+
+body > section p {
+	line-height: 1.5;
+}
+
+body > section > article h2 {
+	font-size: 1.6rem;
+}
+
+body > section > article > footer {
+	color: #606b76;
+	font-size: 0.8rem;
+}
+
+/* Mate gallery */
+
+.gallery {
+	display: flex;
+}
+
+.gallery figure {
+	width: 20%;
+	padding: 0.25rem;
+	font-size: 0.8rem;
+}

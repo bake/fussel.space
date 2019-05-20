@@ -2,12 +2,14 @@
 	<article>
 		<h2>{{ .Title }}</h2>
 
-		<figure align="left">
+		<aside class="gallery">
 			{{ range $i, $_ := .Params.Images }}
-				<img src="{{ index $.Params.Images $i }}">
-				<figcaption>{{ index $.Params.Captions $i | markdownify }}</figcaption>
+				<figure>
+					<img src="{{ index $.Params.Images $i }}">
+					<figcaption>{{ index $.Params.Captions $i | markdownify }}</figcaption>
+				</figure>
 			{{ end }}
-		</figure>
+		</aside>
 
 		{{ .Content }}
 

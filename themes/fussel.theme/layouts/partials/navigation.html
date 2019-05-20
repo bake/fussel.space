@@ -1,10 +1,10 @@
 <ul>
 	{{ $current := . }}
 	{{ range $name, $menu := .Site.Menus }}
-		{{/* <li class="divider"><span>{{ $name }}</span></li> */}}
+		<li class="divider"><span>{{ $name }}</span></li>
 		{{ range $menu }}
-			<li>
-				<a href="{{ .URL }}"{{ if $current.IsMenuCurrent "meta" . }} class="active"{{end}}>
+			<li{{ if $current.IsMenuCurrent "meta" . }} class="active"{{end}}>
+				<a href="{{ .URL }}">
 					{{ .Name }}
 				</a>
 			</li>
@@ -13,9 +13,9 @@
 
 	{{ range .Site.Sections }}
 		<li class="divider"><span>{{ .Name }}</span></li>
-		{{ range sort .Pages "URL" }}
-			<li>
-				<a href="{{ .URL }}"{{ if eq .Permalink $.Permalink }} class="active"{{ end }}>
+		{{ range sort .Pages "Permalink" }}
+			<li{{ if eq .Permalink $.Permalink }} class="active"{{ end }}>
+				<a href="{{ .Permalink }}">
 					{{ .Name }}
 				</a>
 			</li>
