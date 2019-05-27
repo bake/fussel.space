@@ -48,6 +48,11 @@ img {
 	max-width: 100%;
 }
 
+blockquote {
+	padding-left: 0.5rem;
+	border-left: 0.25rem solid #eee;
+}
+
 /* Navigation */
 
 body > aside {
