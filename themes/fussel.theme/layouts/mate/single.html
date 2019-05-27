@@ -20,7 +20,20 @@
 		<hr>
 
 		{{ if .Params.Caffeine }}
-			<p><strong>Koffein:</strong> {{ .Params.Caffeine }}mg/100ml</p>
+			<p>
+				<strong>Koffein:</strong> {{ .Params.Caffeine }}mg/100ml
+				{{ if .Params.Caffeine_Source }}
+					(<a href="{{ .Params.Caffeine_Source }}">Source</a>)
+				{{ end }}
+			</p>
+		{{ end }}
+
+		{{ if .Params.Website }}
+			{{ $url := urls.Parse .Params.Website }}
+			<p>
+				<strong>Homepage:</strong>
+				<a href="{{ .Params.Website }}">{{ $url.Host }}</a>
+			</p>
 		{{ end }}
 
 		{{ if .Params.Monkey }}

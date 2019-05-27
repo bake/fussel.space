@@ -3,7 +3,6 @@ languageCode = "de-de"
 title = "fussel.space"
 theme = "fussel.theme"
 enableGitInfo = true
-# uglyURLs = true
 
 [params]
   description = "A small website. About mate. And foo."
