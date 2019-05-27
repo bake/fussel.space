@@ -1,9 +1,9 @@
 +++
 title = "Top Mate"
 website = "http://top-mate.de/top-mate-getraenk-argentina-blend-mate.html"
-caffeine = "22"
+caffeine = 22
 caffeine_source = "http://top-mate.de/top-mate-getraenk-argentina-blend-mate.html"
-monkey = "18,19,20,21,22,23"
+monkey = [18, 19, 20, 21, 22, 23]
 images = ["top_1.jpg", "top_2.jpg"]
 captions = ["Top Mate", "Top Mate Cola"]
 aliases = ["/mate/top.html"]

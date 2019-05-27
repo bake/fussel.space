@@ -1,7 +1,7 @@
 +++
 title = "LaMate"
 website = "https://shop.rewe.de/PD3230251"
-caffeine = "22"
+caffeine = 22
 caffine_source = "https://shop.rewe.de/PD3230251"
 images = ["lamate_1.jpg"]
 captions = ["LaMate von Rewe"]

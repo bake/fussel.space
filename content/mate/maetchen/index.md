@@ -1,8 +1,8 @@
 +++
 title = "berliner mätchen"
 website = "https://www.berliner-maetchen.de/"
-caffeine = "22"
-monkey = "32"
+caffeine = 22
+monkey = [32]
 images = ["maetchen_1.jpg", "maetchen_2.jpg"]
 captions = ["v. l. n. r.&colon; mätchen, [Maki](/mate/maki.html), Harvey in der [Meta Mate](/mate/metamate.html)", "mätchen"]
 aliases = ["/mate/maetchen.html"]

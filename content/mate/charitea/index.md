@@ -1,8 +1,8 @@
 +++
 title = "ChariTea mate"
 website = "https://charitea.com/product/charitea-mate/"
-caffeine = "20"
-monkey = "15"
+caffeine = 20
+monkey = [15]
 images = ["charitea_1.jpg"]
 captions = ["ChariTea Mate"]
 aliases = ["/mate/charitea.html"]

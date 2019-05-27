@@ -1,7 +1,7 @@
 +++
 title = "Mate-Hoch-2"
 website = "https://www.mate-hoch-2.de/"
-caffeine = "24"
+caffeine = 24
 images = ["hoch-2_1.jpg"]
 captions = ["m<sup>2</sup>-Mate"]
 aliases = ["/mate/hoch-2.html"]

@@ -1,7 +1,6 @@
 +++
 title = "Meta Mate ♥"
 website = "https://metamateberlin.de/"
-caffeine = "∞"
 images = ["metamate_1.jpg", "metamate_2.jpg", "metamate_3.jpg"]
 captions = ["Auf einer Premium Cola", "Mate", "Harvey bei der Meta Mate auf dem 33C3"]
 aliases = ["/mate/metamate.html"]

@@ -1,9 +1,9 @@
 +++
 title = "Maya Mate"
 website = "https://mayamate.de/"
-caffeine = "21,5"
+caffeine = 21.5
 caffeine_source = "https://www.amazon.de/dp/B01D1J5Q0U"
-monkey = "14"
+monkey = [14]
 images = ["maya_1.jpg"]
 captions = ["Maya Mate"]
 aliases = ["/mate/maya.html"]

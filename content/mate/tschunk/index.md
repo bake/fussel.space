@@ -1,6 +1,5 @@
 +++
 title = "Tschunk-Slush"
-caffeine = "∞"
 images = ["tschunk_1.jpg"]
 captions = ["Tschunk-Slush vom RZL"]
 aliases = ["/mate/tschunk.html"]

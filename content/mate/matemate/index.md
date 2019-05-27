@@ -1,9 +1,9 @@
 +++
 title = "MATE MATE"
 website = "https://mate-mate.de/"
-caffeine = "30"
+caffeine = 30
 caffeine_source = "https://mate-mate.de/#mate-mate"
-monkey = "37"
+monkey = [37]
 images = ["matemate_1.jpg"]
 captions = ["MATE MATE? MATE MATE!"]
 aliases = ["/mate/matemate.html"]

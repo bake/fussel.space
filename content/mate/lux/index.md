@@ -1,7 +1,7 @@
 +++
 title = "Lux Mate"
 website = "https://www.lux-mate.de/"
-caffeine = "32"
+caffeine = 32
 caffeine_source = "https://www.lux-mate.de/naehrwerte-zutaten"
 images = ["lux_1.jpg", "lux_2.jpg"]
 captions = ["Lux Mate", "Rückseite"]

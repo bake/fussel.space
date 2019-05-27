@@ -1,7 +1,7 @@
 +++
 title = "Ultichá Mate"
 website = "http://www.ulticha-mate.de/"
-caffeine = "21"
+caffeine = 21
 caffeine_source = "http://www.ulticha-mate.de/#handelsgut"
 images = ["ulti_1.jpg"]
 captions = ["Ultichá Melone"]

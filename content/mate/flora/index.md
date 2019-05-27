@@ -1,9 +1,9 @@
 +++
 title = "Flora Power"
 website = "https://www.flora-power.de/"
-caffeine = "18"
+caffeine = 18
 caffeine_source = "https://www.flora-power.de/"
-monkey = "24"
+monkey = [24]
 images = ["flora_1.jpg", "flora_2.jpg", "flora_3.jpg"]
 captions = ["Flora Power", "Version vom 32C3", "Version von 35C3"]
 aliases = ["/mate/flora.html"]

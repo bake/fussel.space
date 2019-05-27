@@ -1,9 +1,9 @@
 +++
 title = "MAKAvA"
 website = "https://makava.at/"
-caffeine = "6,2"
+caffeine = 6.2
 caffeine_source = "https://www.makava.at/produktdetails.php"
-monkey = "17"
+monkey = [17]
 images = ["makava_1.jpg"]
 captions = ["0,33l MAKAvA"]
 aliases = ["/mate/makava.html"]

@@ -1,8 +1,8 @@
 +++
 title = "MioMioMate"
 website = "https://www.miomio.com/"
-caffeine = "20"
-monkey = "12"
+caffeine = 20
+monkey = [12]
 images = ["miomio_1.jpg", "miomio_2.jpg"]
 captions = ["MioMioMate", "MioMioMate Ginger"]
 aliases = ["/mate/miomio.html"]

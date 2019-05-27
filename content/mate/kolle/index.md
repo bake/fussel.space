@@ -1,9 +1,9 @@
 +++
 title = "kolle-mate"
 website = "https://kolle-mate.de/"
-caffeine = "20"
+caffeine = 20
 caffeine_source = "https://kolle-mate.de/mate/"
-monkey = "31"
+monkey = [31]
 images = ["kolle_1.jpg", "kolle_2.jpg"]
 captions = ["kolle-mate", "kolles Zotrine"]
 aliases = ["/mate/kolle.html"]

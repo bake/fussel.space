@@ -1,9 +1,9 @@
 +++
 title = "Rio Mate"
 website = "http://www.husumer-mineralbrunnen.de/produkten/rio-mate/"
-caffeine = "32"
+caffeine = 32
 caffeine_source = "http://www.husumer-mineralbrunnen.de/produkten/rio-mate/"
-monkey = "28"
+monkey = [28]
 images = ["rio_1.jpg"]
 captions = ["Rio Mate"]
 aliases = ["/mate/rio.html"]
