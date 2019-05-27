@@ -38,10 +38,14 @@
 
 		{{ if .Params.Monkey }}
 			<p>
-				<a href="https://matemonkey.com/map/dealer/?products={{ .Params.Monkey }}">
+				<a href="https://matemonkey.com/map/dealer/?products={{ delimit .Params.Monkey "," }}">
 					{{ .Title }} auf <strong>MateMonkey</strong>
 				</a>
 			</p>
+		{{ end }}
+
+		{{ with .OutputFormats.Get "json" }}
+			<p>Metadaten in <strong><a href="{{ .RelPermalink }}">JSON</a></strong></p>
 		{{ end }}
 
 		<footer>

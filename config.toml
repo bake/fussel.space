@@ -10,6 +10,9 @@ enableGitInfo = true
 [permalinks]
   mate = "/mate/:slug/"
 
+[outputs]
+  page = ["html", "json"]
+
 [menu]
   [[menu.meta]]
     identifier = "start"
