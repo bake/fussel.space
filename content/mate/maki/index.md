@@ -4,8 +4,8 @@ website = "https://maki-mate.de/"
 caffeine = 6.5
 caffeine_source = "https://maki-mate.de/produkte.html"
 monkey = [33, 34, 35, 36]
-images = ["maki_1.jpg", "maki_2.jpg"]
-captions = ["Maki Mate", "Maki Orange"]
+images = ["maki_1.jpg"]
+captions = ["Maki Mate"]
 aliases = ["/mate/maki.html"]
 +++
 
