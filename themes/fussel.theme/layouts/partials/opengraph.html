@@ -1,0 +1,6 @@
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ .Summary }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ range .Params.Images }}
+	<meta property="og:image" content="{{ $.Permalink }}{{ . }}" />
+{{ end }}
