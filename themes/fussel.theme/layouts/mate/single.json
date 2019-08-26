@@ -1,1 +1,37 @@
-{{ .Params | jsonify }}
+{{ define "response" }}
+	{
+		"name": {{ .Title | jsonify }}
+		{{ if .Params.Caffeine }}
+			,"caffeine": {
+				"content": {{ .Params.Caffeine | jsonify }}
+				,"unit": "mg/100ml"
+				{{ if .Params.Caffeine_Source }}
+					,"source": {{ .Params.Caffeine_Source | jsonify}}
+				{{ end }}
+			}
+		{{ end }}
+		,"images": [
+			{{ range $i, $_ := .Params.Images }}
+				{{ if $i }}, {{ end }}
+				{
+					{{ with $.OutputFormats.Get "html" }}
+						"url": "{{ .RelPermalink | absURL }}{{ index $.Params.Images $i }}"
+					{{ end }}
+					,"caption": {{ index $.Params.Captions $i | markdownify | plainify | jsonify }}
+				}
+			{{ end }}
+		]
+		,"links": {
+			{{ with $.OutputFormats.Get "html" }}
+				"html": {{ .Permalink | jsonify }}
+			{{ end }}
+			{{ with $.OutputFormats.Get "json" }}
+				,"json": {{ .Permalink | jsonify }}
+			{{ end }}
+			{{ if .Params.Website }}
+				,"website": {{ .Params.Website | jsonify}}
+			{{ end }}
+		},
+		"lastmod": {{ .Lastmod | jsonify }}
+	}
+{{ end }}

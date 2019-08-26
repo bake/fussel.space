@@ -12,6 +12,7 @@ enableGitInfo = true
 
 [outputs]
   page = ["html", "json"]
+  section = ["html", "json"]
 
 [menu]
   [[menu.meta]]
@@ -20,7 +21,12 @@ enableGitInfo = true
     url = "/"
     weight = 10
   [[menu.meta]]
+    identifier = "api"
+    name = "API"
+    url = "/mate/index.json"
+    weight = 20
+  [[menu.meta]]
     identifier = "git"
     name = "Git"
     url = "https://git.192k.pw/bake/fussel.space"
-    weight = 20
+    weight = 30
