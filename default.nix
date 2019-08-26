@@ -5,5 +5,5 @@ in pkgs.stdenv.mkDerivation {
   src = ./.;
   buildInputs = with pkgs; [ git hugo ];
   buildPhase = "hugo";
-  installPhase = "mkdir -p $out && cp -r public/* $out";
+  installPhase = "mkdir --minify -p $out && cp -r public/* $out";
 }
