@@ -1,6 +1,7 @@
 {{ define "response" }}
 	{
-		"name": {{ .Title | jsonify }}
+		"id": {{ path.Base .Permalink | jsonify }}
+		,"name": {{ .Title | jsonify }}
 		{{ if .Params.Caffeine }}
 			,"caffeine": {
 				"content": {{ .Params.Caffeine | jsonify }}
