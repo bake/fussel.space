@@ -10,3 +10,5 @@ Metadaten zu den Maten, wie den Koffeingehalt oder Bilder, gibt es auch über
 [eine kleine API](/mate/index.json).
 
 Alles hier ist meine persönliche Meinung. Oder gelogen. Im Zweifelsfall gelogen.
+
+{{< gallery "mate" >}}

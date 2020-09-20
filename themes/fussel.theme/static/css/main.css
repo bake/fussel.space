@@ -171,10 +171,21 @@ body > section > article > footer {
 
 .gallery {
 	display: flex;
+	flex-wrap: wrap;;
 }
 
 .gallery figure {
-	width: 20%;
+	width: 33.3%;
 	padding: 0.25rem;
 	font-size: 0.8rem;
+}
+
+.gallery a {
+	border: none;
+}
+
+@media (min-width: 768px) {
+	.gallery figure {
+		width: 20%;
+	}
 }

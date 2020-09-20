@@ -1,0 +1,14 @@
+<div class="gallery">
+	{{ range where .Site.Pages.ByLastmod.Reverse "Section" (.Get 0) }}
+		{{ if isset .Params "images" }}
+			<figure>
+				<a href="{{ .Permalink }}">
+					<img src="{{ .Permalink }}{{ index .Params.Images 0 }}" alt="{{ .Title }}" />
+				</a>
+				<figcaption>{{ .Title }}</figcaption>
+			</figure>
+		{{ end }}  
+	{{ end }}
+</div>
+
+<p>Die Galerie ist absteigend nach der letzten Änderung sortiert.</p>
