@@ -4,7 +4,7 @@ website = "https://mate-mate.de/"
 caffeine = 30
 caffeine_source = "https://mate-mate.de/#mate-mate"
 monkey = [37]
-images = ["matemate_1.jpg", "matemate_1.jpg"]
+images = ["matemate_1.jpg", "matemate_2.jpg"]
 captions = ["MATE MATE? MATE MATE!", "MATE MATE Lemongrass"]
 aliases = ["/mate/matemate.html"]
 +++
