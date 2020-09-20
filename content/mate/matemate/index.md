@@ -4,8 +4,8 @@ website = "https://mate-mate.de/"
 caffeine = 30
 caffeine_source = "https://mate-mate.de/#mate-mate"
 monkey = [37]
-images = ["matemate_1.jpg"]
-captions = ["MATE MATE? MATE MATE!"]
+images = ["matemate_1.jpg", "matemate_1.jpg"]
+captions = ["MATE MATE? MATE MATE!", "MATE MATE Lemongrass"]
 aliases = ["/mate/matemate.html"]
 +++
 
@@ -17,3 +17,5 @@ einige Momente länger präsent. Erinnert dadurch an [Flora](/mate/flora.html),
 
 Wem Club-Mate weniger, dafür aber Flora oder 1337 schmecken, könnte/sollte
 [MATE MATE](https://mate-mate.de/) ausprobiern.
+
+Im April 2020 kamen die beiden Sorten Pfirsich-Lemongrass und Hanf hinzu.
